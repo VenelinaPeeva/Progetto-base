@@ -1,0 +1,169 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+    font-family: 'Electrolize', sans-serif;
+}
+
+/* Variabili */
+:root{
+    --bl: rgb(0, 82, 255);
+    --lb: rgb(216, 249, 255);
+    --w: rgb(247, 247, 247);
+}
+
+body{
+    background-color: var(--lb);
+    color: var(--bl);
+}
+
+.bg-bl{
+    background-color: var(--bl);
+}
+
+.bg-lb{
+    background-color: var(--lb);
+}
+
+.bg-w{
+    background-color: var(--w);
+}
+
+.text-bl{
+    color: var(--bl);
+}
+
+.text-lb{
+    color: var(--lb);
+}
+
+.text-w{
+    color: var(--w);
+}
+
+.border-w{
+    border: 2px solid var(--w);
+}
+
+.border-bl{
+    border: 2px solid var(--bl);
+}
+
+/* Header */
+.header-custom{
+    height: 92vh;
+    background-image: url(./media/foto1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar{
+    min-height: 8vh;
+}
+
+.nav-link{
+    color: var(--w);
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--w);
+}
+
+.navbar-toggler:focus {
+    
+    box-shadow: none;
+}
+
+/* Icons */
+.linea{
+    height: 5px;
+    background-color: var(--bl);
+    width: 60%;
+    position: relative;
+}
+
+.linea::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--w);
+    border: 2px solid var(--bl);
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+
+/* Buttons */
+.button-custom{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    position: relative;
+}
+
+.top-left{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+}
+
+.top-right{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 2px solid var(--w);
+    border-right: 2px solid var(--w);
+}
+
+.bottom-right{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid var(--w);
+    border-right: 2px solid var(--w);
+}
+
+.bottom-left{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid var(--w);
+    border-left: 2px solid var(--w);
+}
+
+div a{
+color: white;
+text-decoration: none;
+}
+
+/* Chi Siamo */
+/* Header Chi Siamo  */
+.header-custom2{
+    height: 92vh;
+    background-image: url(./media/foto4.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 600px){
+    .col-left{
+        position: static;
+    }
+}
